@@ -1,0 +1,4 @@
+<div class="d-flex justify-content-center contenedor_img">
+    <img [src]="url" [alt]="alt" (load)="onload()" [ngStyle]="{display: hasLoaded? '' : 'none'}" class="img_gif animate__animated animate__fadeIn">
+    <img src="assets/loader.svg" *ngIf="!hasLoaded" class="img_loader">
+</div>
